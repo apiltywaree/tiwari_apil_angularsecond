@@ -1,0 +1,15 @@
+<h1>Result</h1>
+Search: <input type="text" ng-model="searchText">
+<table>
+    <tr>
+        <th>Name</th>
+        <th>class</th>
+        <th>age</th>
+    </tr>
+    <tr ng-repeat="sample in sampleArray | filter:searchText">
+        <td>{{sample.name}}</td>
+        <td>{{sample.class}}</td>
+        <td>{{sample.age}}</td>
+    </tr>
+
+</table>
